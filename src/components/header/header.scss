@@ -1,0 +1,191 @@
+.header {
+
+    background: url(../../../public/assets/stars.png);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+
+    .img-container {
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 500px;
+        height: 500px;
+        z-index: 1;
+        display: flex;
+        position: relative;
+        transition: all 1s ease;
+
+        position: relative;
+        right: -50px;
+
+        @media screen and (min-width:320px) and (max-width:767px) {
+            width: 200px;
+            height: 200px;
+            // margin-left: 25px;;         
+        }
+
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            width: 300px;
+            height: 300px;
+            // margin-left: 25px;;         
+        }
+
+
+
+
+        .img {
+            height: auto;
+        }
+
+        &:hover {
+
+            transform: translate(-100px);
+
+            @media screen and (min-width:320px) and (max-width:767px) {
+                transform: scale(1.2);
+            }
+
+
+        }
+
+    }
+
+
+    .right-container {
+
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 400px;
+        height: 400px;
+        z-index: 2;
+
+        position: relative;
+        left: -50px;
+        top: 150px;
+
+
+        display: flex;
+        flex-direction: column;
+        //align-items: center;
+        justify-content: center;
+
+        padding-left: 65px;
+
+        //transform: translate(-100px);
+
+        transition: all 1s ease;
+
+        @media screen and (min-width:320px) and (max-width:767px) {
+            width: 150px;
+            height: 150px;
+            padding: 15px;
+            // margin-right: -20px;      
+        }
+
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            width: 200px;
+            height: 200px;
+            padding: 15px;
+        }
+
+
+
+        h1 {
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            font-size: 35px;
+
+            @media screen and (min-width:320px) and (max-width:767px) {
+                margin-bottom: 15px;
+                letter-spacing: 0;
+                font-size: 17px;
+            }
+
+            @media screen and (min-width:768px) and (max-width:1023px) {
+                margin-bottom: 15px;
+                letter-spacing: 0;
+                font-size: 25px;
+            }
+
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 30px;
+            letter-spacing: 3px;
+
+            @media screen and (min-width:320px) and (max-width:767px) {
+                margin-bottom: 20px;
+                font-size: 14px;
+                letter-spacing: 0;
+            }
+
+            @media screen and (min-width:768px) and (max-width:1023px) {
+                margin-bottom: 20px;
+                font-size: 20px;
+                letter-spacing: 0;
+            }
+
+        }
+
+        h3 {
+            font-size: 25px;
+            letter-spacing: 3px;
+
+            @media screen and (min-width:320px) and (max-width:767px) {}
+
+            @media screen and (min-width:768px) and (max-width:1023px) {
+                font-size: 30px;
+                letter-spacing: 5px;
+            }
+
+            span {
+                font-size: 25px;
+                color: white;
+                text-shadow: 0 0 10px #fff;
+
+                @media screen and (min-width:320px) and (max-width:767px) {}
+
+                @media screen and (min-width:768px) and (max-width:1023px) {
+                    font-size: 30px;
+                    letter-spacing: 5px;
+                }
+
+            }
+        }
+
+        &:hover {
+            transform: translate(100px);
+
+            @media screen and (min-width:320px) and (max-width:767px) {
+                transform: scale(1.2);
+            }
+
+        }
+
+
+    }
+
+
+    .arrow {
+        color: white;
+        font-size: 80px;
+        position: absolute;
+        bottom: 0;
+        animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+        100% {
+            opacity: 0;
+        }
+    }
+
+}
+
+
+
+

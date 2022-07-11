@@ -1,0 +1,220 @@
+.contact {
+    background: url(../../../public/assets/stars.png);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+
+    @media screen and (min-width:320px) and (max-width:767px) {
+        flex-direction: column;
+    }
+
+
+    .contact-header {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 300px;
+
+
+        @media screen and (min-width:320px) and (max-width:767px) {
+            display: none;
+        }
+
+
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            margin-right: 90px;
+        }
+
+
+
+        h1 {
+            margin-bottom: 10px;
+
+            @media screen and (min-width:320px) and (max-width:767px) {
+                margin-bottom: 10;
+            }
+
+        }
+
+        .contact-logo {
+            font-size: 100px;
+        }
+    }
+
+    .contact-wrapper {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .contact-net {
+            background: rgba(255, 255, 255, 0.1);
+
+            width: 300px;
+            height: 100px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            @media screen and (min-width:320px) and (max-width:767px) {
+                width: 300px;
+                height: 80px;
+            }
+
+            .linkedln {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+
+                .logo-1 {
+                    margin-right: 5px;
+                }
+
+                .link-1 {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+            .github {
+                display: flex;
+                align-items: center;
+                text-align: center;
+
+                .logo-2 {
+                    margin-right: 5px;
+                }
+
+                .link-2 {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        form {
+
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 2vw 4vw;
+            width: 70%;
+            width: 400px;
+            height: 500px;
+            border-radius: 10px;
+
+            //margin-left: 100px;
+            margin-bottom: 35px;
+            margin-top: 65px;
+
+
+            @media screen and (max-width:375px) {
+                width: 300px;
+                height: 425px;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (min-width:376px) and (max-width:767px) {
+                width: 300px;
+                height: 500px;
+            }
+
+
+            @media screen and (min-width:768px) and (max-width:1023px) {
+                width: 400px;
+                height: 500px;
+            }
+
+
+            h3 {
+                color: white;
+                font-weight: 800;
+                margin-bottom: 20px;
+                font-size: 25px;
+
+
+                @media screen and (max-width:375px) {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                @media screen and (min-width:376px) and (max-width:767px) {
+                    font-weight: 500;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                }
+
+                @media screen and (min-width:768px) and (max-width:1023px) {
+                    font-weight: 600;
+                    font-size: 25px;
+                    overflow: hidden;
+                }
+
+            }
+
+            input,
+            textarea {
+                border: none;
+                margin: 10px 0;
+                padding: 10px;
+                outline: none;
+                background-color: rgba(255, 255, 255, 0.3);
+                font-size: 16px;
+
+
+                @media screen and (min-width:376px) and (max-width:767px) {
+                    padding: 10px;
+                }
+
+                @media screen and (min-width:768px) and (max-width:1023px) {
+                    padding: 15px;
+                }
+            }
+
+            ::-webkit-input-placeholder {
+                color: rgb(26, 25, 25);
+            }
+
+            :focus::-webkit-input-placeholder {
+                opacity: 0.5;
+            }
+
+            button {
+                padding: 10px;
+                background: rgba(255, 255, 255, 0.6);
+                font-size: 18px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+
+                width: 150px;
+                margin: 10px auto 5px;
+                border-radius: 30px;
+
+                @media screen and (min-width:320px) and (max-width:767px) {
+                    width: 100px;
+                }
+
+                @media screen and (min-width:768px) and (max-width:1023px) {
+                    margin-bottom: 10px;
+                    overflow: hidden;
+                    height: auto;
+                }
+
+            }
+
+        }
+
+    }
+}
